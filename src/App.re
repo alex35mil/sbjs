@@ -2,7 +2,7 @@ let renderRoute element => ReactDOMRe.renderToElementWithId <Layout> element </L
 
 let router =
   DirectorRe.makeRouter {
-    /* Main */
+    /* Home */
     "/": fun () => renderRoute <Home />,
     /* Sourcebuster */
     "/sourcebuster": fun () => renderRoute (Sourcebuster.renderPage <SourcebusterPageMain />),

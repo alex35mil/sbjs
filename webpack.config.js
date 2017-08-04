@@ -48,8 +48,8 @@ module.exports = {
       allChunks: true,
     }),
     new HtmlWebpackPlugin({
-      inject: 'body',
       template: './src/statics/index.ejs',
+      inject: 'body',
       minify: {
         html5: true,
         collapseWhitespace: true,

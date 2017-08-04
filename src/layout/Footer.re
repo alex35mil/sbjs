@@ -12,7 +12,7 @@ let make _ => {
             href="https://github.com/alexfedoseev/sourcebuster-js"
             className="FooterLink"
             title="Source code">
-            <SourcesIcon />
+            <SourcesIcon className="SmallIcon" />
             <span className="FooterLinkText">
               (ReasonReact.stringToElement "sourcebuster.js")
             </span>
@@ -21,7 +21,7 @@ let make _ => {
             href="https://github.com/alexfedoseev/sb-placer"
             className="FooterLink"
             title="Source code">
-            <SourcesIcon />
+            <SourcesIcon className="SmallIcon" />
             <span className="FooterLinkText"> (ReasonReact.stringToElement "sb-placer.js") </span>
           </a>
         </div>

@@ -5,7 +5,7 @@ let make _ => {
   render: fun _ =>
     <header className="Header">
       <div className="HeaderMenu">
-        <a href="#/" className="HeaderLink"> <HomeIcon /> </a>
+        <a href="#/" className="HeaderLink"> <HomeIcon className="SmallIcon" /> </a>
         <a href="#/sourcebuster" className="HeaderLink">
           <span className="HeaderLinkRed"> (ReasonReact.stringToElement "source") </span>
           (ReasonReact.stringToElement "buster")
@@ -18,7 +18,7 @@ let make _ => {
         </a>
       </div>
       <a href="https://github.com/alexfedoseev/sourcebuster-js" className="HeaderLink">
-        <GithubIcon />
+        <GithubIcon className="SmallIcon" />
       </a>
     </header>
 };
