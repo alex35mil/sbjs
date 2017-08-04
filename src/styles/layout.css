@@ -1,0 +1,134 @@
+:root {
+  --content-width: 900px;
+}
+
+html,
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: Menlo, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* stylelint-disable-next-line selector-no-id  */
+#app {
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.Container {
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.Header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--content-width);
+  height: 100px;
+}
+
+.HeaderMenu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100px;
+}
+
+.HeaderLink {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.HeaderLink:focus,
+.HeaderLink:hover {
+  background-color: #f1f1f1;
+}
+
+.HeaderLinkRed {
+  color: #ff0000;
+}
+
+.HeaderLinkGray {
+  color: #b9b9b9;
+}
+
+.Section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.Footer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0 0;
+  background-color: #454545;
+  height: 120px;
+  width: 100%;
+  color: #aaa;
+  font-size: .7em;
+}
+
+.FooterContent {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--content-width);
+  height: 100%;
+}
+
+.FooterLinks {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.FooterLink {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 20px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.FooterLinkText {
+  display: inline-flex;
+  margin-left: 10px;
+}

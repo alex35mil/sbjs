@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  transform: none;
+  transform-origin: 50% 50% 0;
+  transition: none 0s ease 0s;
+  margin: 0;
+  outline: none;
+  outline-offset: 0;
+  padding: 0;
+}
+
+nav ol,
+nav ul {
+  list-style: none;
+}
+
+a {
+  /* Remove the gray background on active links in IE 10 */
+  background-color: transparent;
+
+  /* Remove gaps in links underline in iOS 8+ and Safari 8+ */
+  -webkit-text-decoration-skip: objects;
+}
+
+/* Remove the text shadow on text selections */
+::-moz-selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none;
+}
+
+svg:not(:root) {
+  /* Hide the overflow in IE */
+  overflow: hidden;
+}
