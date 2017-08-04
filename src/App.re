@@ -2,8 +2,18 @@ let renderRoute element => ReactDOMRe.renderToElementWithId <Layout> element </L
 
 let router =
   DirectorRe.makeRouter {
+    /* Main */
     "/": fun () => renderRoute <Home />,
-    "/sourcebuster": fun () => renderRoute <Sourcebuster />,
+    /* Sourcebuster */
+    "/sourcebuster": fun () => renderRoute (Sourcebuster.renderPage <SourcebusterPageMain />),
+    "/sourcebuster/install": fun () =>
+      renderRoute (Sourcebuster.renderPage <SourcebusterPageInstall />),
+    "/sourcebuster/configure": fun () =>
+      renderRoute (Sourcebuster.renderPage <SourcebusterPageConfigure />),
+    "/sourcebuster/data": fun () => renderRoute (Sourcebuster.renderPage <SourcebusterPageData />),
+    "/sourcebuster/changelog": fun () =>
+      renderRoute (Sourcebuster.renderPage <SourcebusterPageChangelog />),
+    /* SB-Placer */
     "/sb-placer": fun () => renderRoute <SbPlacer />
   };
 

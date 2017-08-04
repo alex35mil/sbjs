@@ -81,12 +81,56 @@ body {
   color: #b9b9b9;
 }
 
-.Section {
+.Section,
+.SectionWrapper {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   flex: 1;
   width: 100%;
+}
+
+.Section {
+  margin-top: 30px;
+}
+
+.SectionHeader {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: var(--content-width);
+}
+
+.SectionTitle {
+  font-size: 2em;
+}
+
+.SectionTitleLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.SectionNavbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  font-size: .9em;
+}
+
+.SectionNavbarLink {
+  display: flex;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.SectionNavbarLink:focus,
+.SectionNavbarLink:hover {
+  background-color: #eee;
 }
 
 .Footer {
