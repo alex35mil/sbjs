@@ -71,6 +71,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/statics/index.ejs',
+      favicon: './src/statics/favicon.ico',
       inject: 'body',
       minify: {
         html5: true,
