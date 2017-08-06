@@ -9,7 +9,7 @@
     "build": "yarn run clean && webpack",
     "watch": "yarn run clean && webpack -w",
     "serve": "live-server ./docs --port=4000 --no-browser",
-    "clean": "bsb -clean-world && rm -rf docs/*"
+    "clean": "bsb -clean-world && rm -rf docs/* && cp CNAME docs/"
   },
   "dependencies": {
     "bs-director": "0.0.4",
