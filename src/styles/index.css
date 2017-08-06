@@ -1,2 +1,12 @@
-@import "resets.css";
-@import "layout.css";
+/* App */
+@import "src/styles/resets";
+@import "src/layout/Layout";
+@import "src/layout/Header";
+@import "src/layout/Footer";
+@import "src/layout/Doc";
+@import "src/components/Button";
+@import "src/components/Svg";
+@import "src/pages/Home";
+
+/* Vendor */
+@import 'prismjs/themes/prism';

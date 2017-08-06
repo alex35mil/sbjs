@@ -1,0 +1,47 @@
+@import "src/styles/config";
+
+html,
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--site-bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.Container {
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.Section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  width: 100%;
+}

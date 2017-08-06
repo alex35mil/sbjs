@@ -1,0 +1,42 @@
+.Footer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #454545;
+  height: 120px;
+  width: 100%;
+  color: #aaa;
+  font-size: .7em;
+}
+
+.FooterContent {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--content-width);
+  height: 100%;
+}
+
+.FooterLinks {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.FooterLink {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 20px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.FooterLinkText {
+  display: inline-flex;
+  margin-left: 10px;
+}

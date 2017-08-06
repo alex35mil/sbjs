@@ -18,11 +18,11 @@ let make _ => {
             </span>
           </a>
           <a
-            href="https://github.com/alexfedoseev/sb-placer"
+            href="https://github.com/alexfedoseev/sbjs.rocks"
             className="FooterLink"
             title="Source code">
             <SourcesIcon className="SmallIcon" />
-            <span className="FooterLinkText"> (ReasonReact.stringToElement "sb-placer.js") </span>
+            <span className="FooterLinkText"> (ReasonReact.stringToElement "sbjs.rocks") </span>
           </a>
         </div>
       </div>

@@ -1,0 +1,23 @@
+.Button {
+  display: inline-flex;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.ButtonSizeMd {
+  padding: 10px 15px;
+}
+
+.ButtonSizeLg {
+  padding: 15px 20px;
+}
+
+.ButtonColorBlue {
+  background-color: #29d;
+  color: #fff;
+}
+
+.ButtonColorGray {
+  background-color: #eee;
+  color: inherit;
+}

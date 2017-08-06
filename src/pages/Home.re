@@ -1,9 +1,9 @@
 let component = ReasonReact.statelessComponent "Home";
 
-let make _children => {
+let make _ => {
   ...component,
   render: fun _ =>
-    <div className="SectionWrapper">
+    <div className="Home">
       <div className="HomeHero">
         (ReasonReact.stringToElement "Your source is")
         <span className="HomeHeroSource"> (ReasonReact.stringToElement "google.com") </span>
@@ -26,7 +26,9 @@ let make _children => {
             (ReasonReact.stringToElement "Show relevant content")
           </h2>
           <div className="HomeSubHeroBlockText">
-            (ReasonReact.stringToElement "Show content depending on a source")
+            (ReasonReact.stringToElement "Show content")
+            <br />
+            (ReasonReact.stringToElement "depending on a source")
           </div>
         </div>
         <div className="HomeSubHeroBlock">

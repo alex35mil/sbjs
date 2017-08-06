@@ -1,5 +1,5 @@
 {
-  "name": "sbjs-rocks",
+  "name": "sbjs.rocks",
   "reason": {
     "react-jsx": 2
   },
@@ -8,12 +8,11 @@
     {
       "dir": "src",
       "subdirs": [
+        "bindings",
         "components",
         "icons",
         "layout",
         "pages",
-        "pages/sourcebuster",
-        "pages/sb-placer"
       ]
     }
   ]

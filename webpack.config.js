@@ -30,6 +30,9 @@ module.exports = {
               options: {
                 ident: 'postcss',
                 plugins: () => [
+                  require('postcss-import')({
+                    path: [__dirname, path.join(__dirname, 'node_modules')],
+                  }),
                   require('autoprefixer')(),
                   require('postcss-custom-media')(),
                   require('postcss-custom-properties')(),
@@ -39,6 +42,25 @@ module.exports = {
             },
           ],
         }),
+      },
+      {
+        test: /\.md$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              minimize: true,
+            },
+          },
+          {
+            loader: 'markdown-loader',
+            options: {
+              gfm: true,
+              breaks: true,
+              smartypants: true,
+            },
+          },
+        ],
       },
     ],
   },

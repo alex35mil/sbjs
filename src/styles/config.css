@@ -1,0 +1,9 @@
+:root {
+  --content-width: 900px;
+  --site-bg-color: #fff;
+  --text-color: #333;
+  --font-family: Menlo, Monaco, Consolas, Courier New, monospace;
+  --font-weight: 400;
+  --font-size: 20px;
+  --line-height: 1.4;
+}

@@ -1,0 +1,85 @@
+@import "src/styles/config";
+
+.Doc {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: var(--content-width);
+}
+
+.DocContent {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.DocMarkdown {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+
+  & h1 {
+    margin: 40px 0 15px;
+    width: 100%;
+    font-size: 1.9em;
+    font-weight: 700;
+
+    & + h2,
+    & + p {
+      margin-top: 0;
+    }
+  }
+
+  & h2 {
+    margin: 30px 0 15px;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 700;
+
+    & + h3,
+    & + p {
+      margin-top: 0;
+    }
+  }
+
+  & h3 {
+    margin: 40px 0 15px;
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 700;
+
+    & + p {
+      margin-top: 0;
+    }
+  }
+
+  & p {
+    margin: 20px 0;
+  }
+
+  & a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  & code {
+    display: inline-block;
+    padding: 0 2px;
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: Menlo, Monaco, Consolas, Courier New, monospace !important;
+    font-size: .9em;
+    color: #333;
+  }
+}
+
+.DocBottomNavigation {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 20px 0 40px;
+  width: 100%;
+}
