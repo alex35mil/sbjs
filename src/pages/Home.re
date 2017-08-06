@@ -7,7 +7,12 @@ let make _ => {
       <div className="HomeHero">
         (ReasonReact.stringToElement "Your source is")
         <span className="HomeHeroSource">
-          (ReasonReact.stringToElement SourcebusterRe.getCurrentSrc)
+          (
+            ReasonReact.stringToElement (
+              SourcebusterRe.getCurrentSrc === "(direct)" ?
+                "direct visit" : SourcebusterRe.getCurrentSrc
+            )
+          )
         </span>
       </div>
       <div className="HomeSubHeroBlocks">
