@@ -65,6 +65,22 @@
     text-decoration: underline;
   }
 
+  & ul {
+    margin-left: 50px;
+  }
+
+  & li {
+    margin: 10px 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   & code {
     display: inline-block;
     padding: 0 2px;
