@@ -17,33 +17,6 @@
   height: 100px;
 }
 
-.HeaderLink {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
-  margin: 0 30px;
-  border-bottom: 2px solid transparent;
-  height: 100%;
-  color: inherit;
-  font-size: .9em;
-  text-decoration: none;
-  transition: border-bottom .1s ease-in-out;
-
-  &:focus,
-  &:hover {
-    border-bottom: 2px solid #ff0000;
-  }
-
-  &:first-child {
-    margin-left: 0;
-  }
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
 .HeaderLogoRed {
   color: #ff0000;
 }

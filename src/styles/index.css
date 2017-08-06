@@ -5,6 +5,7 @@
 @import "src/layout/Footer";
 @import "src/layout/Doc";
 @import "src/components/Button";
+@import "src/components/NavLink";
 @import "src/components/Svg";
 @import "src/pages/Home";
 
