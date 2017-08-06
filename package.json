@@ -8,8 +8,8 @@
     "start": "concurrently -k -n \"HTTP,WATCH\" \"yarn run serve\" \"yarn run watch\"",
     "build": "yarn run clean && webpack",
     "watch": "yarn run clean && webpack -w",
-    "serve": "live-server ./public --port=4000 --no-browser",
-    "clean": "bsb -clean-world && rm -rf public/*"
+    "serve": "live-server ./docs --port=4000 --no-browser",
+    "clean": "bsb -clean-world && rm -rf docs/*"
   },
   "dependencies": {
     "bs-director": "0.0.4",

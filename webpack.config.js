@@ -9,7 +9,7 @@ module.exports = {
     app: ['./src/App.re', './src/styles/index.css'],
   },
   output: {
-    path: path.join(__dirname, 'public'),
+    path: path.join(__dirname, 'docs'),
     filename: '[name].[chunkhash].js',
   },
   context: process.cwd(),
