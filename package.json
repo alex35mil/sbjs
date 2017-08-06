@@ -23,6 +23,7 @@
     "autoprefixer": "7.1.2",
     "bs-loader": "1.5.8",
     "bs-platform": "1.8.2",
+    "compression-webpack-plugin": "1.0.0",
     "concurrently": "3.5.0",
     "css-loader": "0.28.4",
     "extract-text-webpack-plugin": "3.0.0",

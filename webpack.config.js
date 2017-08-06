@@ -1,6 +1,8 @@
+const webpack = require('webpack');
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const path = require('path');
+const GzipPlugin = require('compression-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -8,12 +10,15 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'public'),
-    filename: '[name].js',
+    filename: '[name].[chunkhash].js',
   },
+  context: process.cwd(),
   resolve: {
     extensions: ['.re', '.ml', '.js'],
   },
+  devtool: false,
   module: {
+    noParse: /\.min\.js$/,
     rules: [
       { test: /\.(re|ml)$/, use: 'bs-loader' },
       {
@@ -23,7 +28,10 @@ module.exports = {
           use: [
             {
               loader: 'css-loader',
-              options: { importLoaders: 1 },
+              options: {
+                minimize: true,
+                importLoaders: 1,
+              },
             },
             {
               loader: 'postcss-loader',
@@ -66,8 +74,21 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: 'styles.css',
+      filename: '[name].[contenthash].css',
       allChunks: true,
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        drop_debugger: true,
+        drop_console: true,
+        screw_ie8: true,
+        warnings: false,
+      },
+    }),
+    new GzipPlugin({
+      asset: '[path].gz',
+      algorithm: 'gzip',
+      regExp: /\.js$|\.css$/,
     }),
     new HtmlWebpackPlugin({
       template: './src/statics/index.ejs',
