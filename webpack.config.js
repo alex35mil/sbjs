@@ -3,16 +3,19 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const GzipPlugin = require('compression-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+
+const buildPath = path.join(__dirname, 'docs');
 
 module.exports = {
   entry: {
     app: ['./src/App.re', './src/styles/index.css'],
   },
   output: {
-    path: path.join(__dirname, 'docs'),
+    path: buildPath,
     filename: '[name].[chunkhash].js',
   },
-  context: process.cwd(),
+  context: __dirname,
   resolve: {
     extensions: ['.re', '.ml', '.js'],
   },
@@ -100,5 +103,15 @@ module.exports = {
         preserveLineBreaks: false,
       },
     }),
+    new CopyPlugin([
+      {
+        from: path.join(__dirname, 'CNAME'),
+        to: buildPath,
+      },
+      {
+        from: path.join(__dirname, 'src', 'statics', '404.html'),
+        to: buildPath,
+      },
+    ]),
   ],
 };
