@@ -11,4 +11,6 @@ let router =
     "/usage": fun () => renderRoute "/usage" (renderDoc <Usage />)
   };
 
+SourcebusterRe.init ();
+
 DirectorRe.init router "/";

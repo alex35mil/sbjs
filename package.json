@@ -8,7 +8,7 @@
     "start": "concurrently -k -n \"HTTP,WATCH\" \"yarn run serve\" \"yarn run watch\"",
     "build": "yarn run clean && webpack",
     "watch": "yarn run clean && webpack -w",
-    "serve": "live-server ./public",
+    "serve": "live-server ./public --port=4000 --no-browser",
     "clean": "bsb -clean-world && rm -rf public/*"
   },
   "dependencies": {
@@ -16,7 +16,8 @@
     "prismjs": "1.6.0",
     "react": "15.6.1",
     "react-dom": "15.6.1",
-    "reason-react": "0.2.3"
+    "reason-react": "0.2.3",
+    "sourcebuster": "1.1.0"
   },
   "devDependencies": {
     "autoprefixer": "7.1.2",

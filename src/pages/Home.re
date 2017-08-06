@@ -6,7 +6,9 @@ let make _ => {
     <div className="Home">
       <div className="HomeHero">
         (ReasonReact.stringToElement "Your source is")
-        <span className="HomeHeroSource"> (ReasonReact.stringToElement "google.com") </span>
+        <span className="HomeHeroSource">
+          (ReasonReact.stringToElement SourcebusterRe.getCurrentSrc)
+        </span>
       </div>
       <div className="HomeSubHeroBlocks">
         <div className="HomeSubHeroBlock">
@@ -15,7 +17,7 @@ let make _ => {
             (ReasonReact.stringToElement "Track sources")
           </h2>
           <div className="HomeSubHeroBlockText">
-            (ReasonReact.stringToElement "Know sources")
+            (ReasonReact.stringToElement "Find out the sources")
             <br />
             (ReasonReact.stringToElement "of your visitors")
           </div>
@@ -51,60 +53,61 @@ let make _ => {
               <tbody>
                 <tr>
                   <td> (ReasonReact.stringToElement "type:") </td>
-                  <td> (ReasonReact.stringToElement "(none)") </td>
+                  <td> (ReasonReact.stringToElement SourcebusterRe.getFirstTyp) </td>
                 </tr>
                 <tr>
                   <td> (ReasonReact.stringToElement "utm_source:") </td>
-                  <td> (ReasonReact.stringToElement "(none)") </td>
+                  <td> (ReasonReact.stringToElement SourcebusterRe.getFirstSrc) </td>
                 </tr>
                 <tr>
                   <td> (ReasonReact.stringToElement "utm_medium:") </td>
-                  <td> (ReasonReact.stringToElement "(none)") </td>
+                  <td> (ReasonReact.stringToElement SourcebusterRe.getFirstMdm) </td>
                 </tr>
                 <tr>
                   <td> (ReasonReact.stringToElement "utm_campaign:") </td>
-                  <td> (ReasonReact.stringToElement "(none)") </td>
+                  <td> (ReasonReact.stringToElement SourcebusterRe.getFirstCmp) </td>
                 </tr>
                 <tr>
                   <td> (ReasonReact.stringToElement "utm_content:") </td>
-                  <td> (ReasonReact.stringToElement "(none)") </td>
+                  <td> (ReasonReact.stringToElement SourcebusterRe.getFirstCnt) </td>
                 </tr>
                 <tr>
                   <td> (ReasonReact.stringToElement "utm_term:") </td>
-                  <td> (ReasonReact.stringToElement "(none)") </td>
+                  <td> (ReasonReact.stringToElement SourcebusterRe.getFirstTrm) </td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div className="HomeTrackedDataVisit">
             <h3 className="HomeTrackedDataVisitTitle">
-              (ReasonReact.stringToElement "Current visit: 5")
+              (ReasonReact.stringToElement "Current visit: #")
+              (ReasonReact.stringToElement SourcebusterRe.getUserVisits)
             </h3>
             <table className="HomeTrackedDataVisitTable">
               <tbody>
                 <tr>
                   <td> (ReasonReact.stringToElement "type:") </td>
-                  <td> (ReasonReact.stringToElement "(none)") </td>
+                  <td> (ReasonReact.stringToElement SourcebusterRe.getCurrentTyp) </td>
                 </tr>
                 <tr>
                   <td> (ReasonReact.stringToElement "utm_source:") </td>
-                  <td> (ReasonReact.stringToElement "(none)") </td>
+                  <td> (ReasonReact.stringToElement SourcebusterRe.getCurrentSrc) </td>
                 </tr>
                 <tr>
                   <td> (ReasonReact.stringToElement "utm_medium:") </td>
-                  <td> (ReasonReact.stringToElement "(none)") </td>
+                  <td> (ReasonReact.stringToElement SourcebusterRe.getCurrentMdm) </td>
                 </tr>
                 <tr>
                   <td> (ReasonReact.stringToElement "utm_campaign:") </td>
-                  <td> (ReasonReact.stringToElement "(none)") </td>
+                  <td> (ReasonReact.stringToElement SourcebusterRe.getCurrentCmp) </td>
                 </tr>
                 <tr>
                   <td> (ReasonReact.stringToElement "utm_content:") </td>
-                  <td> (ReasonReact.stringToElement "(none)") </td>
+                  <td> (ReasonReact.stringToElement SourcebusterRe.getCurrentCnt) </td>
                 </tr>
                 <tr>
                   <td> (ReasonReact.stringToElement "utm_term:") </td>
-                  <td> (ReasonReact.stringToElement "(none)") </td>
+                  <td> (ReasonReact.stringToElement SourcebusterRe.getCurrentTrm) </td>
                 </tr>
               </tbody>
             </table>

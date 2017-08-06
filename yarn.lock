@@ -3134,6 +3134,10 @@ source-map@0.5.x, source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.0, sourc
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
 
+sourcebuster@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/sourcebuster/-/sourcebuster-1.1.0.tgz#950ac46da1603e91b76f123ed2b6eb657425abe7"
+
 spawn-command@^0.0.2-1:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/spawn-command/-/spawn-command-0.0.2.tgz#9544e1a43ca045f8531aac1a48cb29bdae62338e"
